@@ -9,11 +9,9 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "shadowflare-core": "file:../../src/core"
-  },
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
-    "superfine": "^7.0.0"
-  }
+    "shadowflare": "file:../../src"
+  },
+  "dependencies": {}
 }

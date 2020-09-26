@@ -4,7 +4,8 @@
   "description": "",
   "main": "main.js",
   "files": [
-    "main.js"
+    "main.js",
+    "router.js"
   ],
   "scripts": {
     "test": "tap --reporter specy main.test.js"

@@ -1,0 +1,23 @@
+{
+  "name": "shadowflare",
+  "version": "0.1.1",
+  "description": "Shadowflare is a minimalistic state management framework for web apps inspired by [hyperapp](https://hyperapp.dev/) and [the Elm architecture](https://guide.elm-lang.org/architecture/).",
+  "main": "main.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Avalander/shadowflare.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Avalander/shadowflare/issues"
+  },
+  "homepage": "https://github.com/Avalander/shadowflare#readme"
+}

@@ -1,13 +1,9 @@
-import shadowflare from 'shadowflare-core'
-import makeRouter from 'shadowflare-core/router'
-import { h, patch } from 'superfine'
+import start, { makeRouter } from 'shadowflare'
+import { div } from 'shadowflare/html'
 
 import makeNavbar from './navbar'
 import * as CounterPage from './counter.page'
 import * as LoremPage from './lorem.page'
-
-
-const start = shadowflare(patch)
 
 
 // Router
@@ -43,7 +39,7 @@ const init = () => {
 // View
 
 const view = (state, dispatch) =>
-	h('div', {}, [
+	div([
 		navbar(state, dispatch),
 		router.render(state, dispatch),
 	])

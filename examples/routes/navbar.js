@@ -1,4 +1,7 @@
-import { h } from 'superfine'
+import {
+	a,
+	nav,
+} from 'shadowflare/html'
 
 
 export default router => {
@@ -11,15 +14,15 @@ export default router => {
 	}
 
 	return (state, dispatch) =>
-		h('nav', {}, [
-			h('a', {
+		nav([
+			a({
 				href: '/lorem',
 				onclick: ev => {
 					ev.preventDefault()
 					dispatch([ goToPage, '/lorem' ])
 				},
 			}, 'Lorem'),
-			h('a', {
+			a({
 				href: '/counter',
 				onclick: ev => {
 					ev.preventDefault()

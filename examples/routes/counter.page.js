@@ -1,4 +1,9 @@
-import { h } from 'superfine'
+import {
+	button,
+	div,
+	h1,
+	h2,
+} from 'shadowflare/html'
 
 
 // Actions
@@ -36,14 +41,14 @@ export const init = () => {
 // View
 
 export const view = (state, dispatch) =>
-	h('div', {}, [
-		h('h1', {}, 'Counter'),
-		h('h2', {}, state.counter.value.toString()),
-		h('div', {}, [
-			h('button', {
+	div([
+		h1('Counter'),
+		h2(state.counter.value.toString()),
+		div([
+			button({
 				onclick: () => dispatch([ updateCounter, -1 ]),
 			}, ' - '),
-			h('button', {
+			button({
 				onclick: () => dispatch([ updateCounter, 1 ]),
 			}, ' + ')
 		])
