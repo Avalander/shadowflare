@@ -1,14 +1,17 @@
 {
   "name": "shadowflare-core",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
   "main": "main.js",
+  "files": [
+    "main.js"
+  ],
   "scripts": {
     "test": "tap --reporter specy main.test.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Avalander",
+  "license": "MIT",
   "devDependencies": {
     "tap": "^14.10.7"
   }

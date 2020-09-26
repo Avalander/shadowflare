@@ -80,7 +80,7 @@ export default routes => {
 
 	const setupListener = (_, dispatch) => {
 		window.addEventListener('popstate', ev => {
-			dispatch(triggerLocation(ev.state.location))
+			dispatch([ triggerLocation(ev.state.location) ])
 		})
 	}
 
@@ -90,7 +90,7 @@ export default routes => {
 			const [ state, effects ] = initRoute(path)
 			effects.forEach(([ e, ...params ]) => e(params, dispatch))
 
-			return dispatch(setLocation(path, state))
+			return dispatch([ setLocation(path, state) ])
 		},
 		back: (_, dispatch) => {
 			window.history.back()

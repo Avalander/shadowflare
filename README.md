@@ -3,7 +3,6 @@ Shadowflare is a minimalistic state management framework for web apps inspired b
 The architecture consists of a _view_ that dispatches _actions_ that update the _state_ which is rendered into a new _view_. _Actions_ are supposed to be pure and synchronous, but they can return a list of _effects_ (for example, executing an HTTP request or setting a timer), and _effects_ can dispatch _actions_ to hook back into the application.
 
 
-
 # Example
 
 We will create a page with a button to effect calls to the [icanhazdadjoke API](https://icanhazdadjoke.com/). Every time the button is pressed, the API will be invoked and the resulting joke will be displayed to the user.
@@ -12,7 +11,7 @@ To use the framework, first we need to provide a `patch` function, since it does
 
 ```javascript
 import { h, patch } from 'superfine'
-import shadowflare from 'shadowflare'
+import shadowflare from 'shadowflare-core'
 
 const start = shadowflare(patch)
 ```
